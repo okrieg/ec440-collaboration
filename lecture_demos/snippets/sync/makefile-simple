@@ -1,0 +1,17 @@
+override CFLAGS :=  -Werror -Wall -std=gnu99 -O0 -g $(CFLAGS) -I.
+override LDFLAGS :=  -pthread
+
+CC = gcc
+
+prog = dining_phil
+
+all: $(prog)
+
+dining_phil.o : dining_phil.c philops.h
+philops.o : philops.c philops.h
+dining_phil: dining_phil.o philops.o
+
+.PHONY: clean 
+
+clean:
+	rm -f *.o *~ $(prog)

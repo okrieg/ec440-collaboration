@@ -1,0 +1,14 @@
+I used the program from the lecture (from Tannenbaum book.. fix ref) and then modified to use actual code.
+makefile derived from Daniel's code examples
+
+
+To review:
+- how compile/link works
+- simple makefile
+- show prototype, compiler files
+- bad prototype
+- objdump, show unresolved symbols
+- test makefiles
+- shellscript to run experiments
+- example test programs
+- what more sophisticated makefile does

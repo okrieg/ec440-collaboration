@@ -1,0 +1,15 @@
+What do I want to test?
+- state after a philosopher gets chopsticks
+  - if neighbor philosophers thinking 
+  - if neighbor philosophers eating - 
+- state after you put chopstics
+  - if neighbor philosophers thinking
+  - if neighbor philosophers blocked
+- running a full simulation
+- debugging scripts, try running -x
+
+
+---- saved snippet
+
+#if 0
+#endif
