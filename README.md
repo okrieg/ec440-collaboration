@@ -1,6 +1,13 @@
 # EC440 Collaboration Repository
-This repository exists to give students an environment in which they can
-collaborate on code that the teaching staff has approved for group efforts.
+This repository exists to share code both between staff and students of ec440. 
 By default, assume all homework solutions are **not** allowed to be solved
 collaboratively. However, the test plans that students implement for those
 assignments are allowed to be solved collaboratively.
+
+
+Directories:
+* lecture_demos - various snippets of code we have talked through or shown in class. See snippets/lecture_demos/sync for dining philosopher problem with various examples of makefiles and tests
+* pthread_tests - place where you can see some test cases for pthread implementation
+
+You can fork your own vesion of this repo, and then suggest changes to us, by looking at [following](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork).  You will definately get bonus points for tests that get accepted. 
+
