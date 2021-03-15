@@ -1,0 +1,5 @@
+- walk through simple example, fcopy
+  - do a stat on the file - turns out my default mode is rw group and read everyone
+- then say if instead we want to get mode
+- add statbuf
+- debug, print /o statbuf...
