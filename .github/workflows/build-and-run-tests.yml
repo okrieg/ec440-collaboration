@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: make checkprogs
-      run: make checkprogs
-    - name: make check
-      run: make check
+    - name: Build pthread test programs
+      run: make -C pthread_tests checkprogs
+    - name: Run pthread test programs
+      run: make -C pthread_tests check
