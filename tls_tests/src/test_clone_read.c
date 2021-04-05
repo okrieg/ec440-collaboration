@@ -25,12 +25,12 @@ int tls_clone(pthread_t tid);
 
 int ret;
 char *msg = "Hello";
-int pthread_id;
+pthread_t pthread_id;
 
 void *threadFn(void *id_ptr){
     int thread_id = *(int*)id_ptr;
     
-    pthread_id = (int)pthread_self();
+    pthread_id = pthread_self();
     printf("Thread %d: pthread_self() returns %d\n\n", thread_id, (int)pthread_self());
     
     printf("Thread %d: Trying to obtain TLS of size 1000...\n", thread_id);
@@ -59,7 +59,7 @@ int main(int argc, char** argv) {
     sleep(1);
     
     printf("Main: Trying to clone thread %d...\n", myInt);
-    ret = tls_clone((pthread_t)pthread_id);
+    ret = tls_clone(pthread_id);
     assert(ret == 0);
     printf("...Main: Clone successful\n\n");
     
